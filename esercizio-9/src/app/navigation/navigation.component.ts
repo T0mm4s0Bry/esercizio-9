@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ListComponent } from '../list/list.component';
 import { CommonModule } from '@angular/common';
 import { IntroductionComponent } from '../introduction/introduction.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [ListComponent, IntroductionComponent, CommonModule],
+  imports: [IntroductionComponent, CommonModule, RouterOutlet],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css'
 })
