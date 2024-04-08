@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" style="width:400px; margin-left: auto; margin-right: auto;"  *ngFor="let element of biglietti index as i">
+      <div class="card mb-4" >
+        <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title" align="center">{{element.nome}}</h4>
+          <p class="card-text">{{element.costo}}</p>
+          <p class="card-text">{{element.categoria}}</p>
+          <p class="card-text">{{element.rimanenti}}</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
