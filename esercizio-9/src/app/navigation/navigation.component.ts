@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Output,EventEmitter } from '@angular/core';
 import { ListComponent } from '../list/list.component';
 import { CommonModule } from '@angular/common';
 import { IntroductionComponent } from '../introduction/introduction.component';
@@ -17,9 +17,20 @@ export class NavigationComponent {
 
   biglietto(){
     this.controllo=false
+    this.mandaDatiEvento.emit(this.controllo);
   }
 
   home(){
     this.controllo=true
+    this.mandaDatiEvento.emit(this.controllo);
   }
+  @Output() mandaDatiEvento = new EventEmitter<boolean>();
+
+
+ nome = 'Giorgio';
+
+
+ 
+   
+
 }

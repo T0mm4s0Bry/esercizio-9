@@ -1,19 +1,4 @@
-<div *ngIf="controllo ;then thenBlock1; else elseBlock1"></div>
-<ng-template #thenBlock1>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary"align="center">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <form class="d-flex justify-content-center">
-        </form>
-          <button type="button" class="btn-primary" (click)="home()" style="width:200px; margin-left: 20%; margin-right: 20%;">HOME</button>
-          <button type="button" class="btn-primary" (click)="biglietto()" style="width:200px; margin-left: 20%; margin-right: 20%;">BIGLIETTI</button>     
-      </div>
-    </div>
-  </nav>
-  <app-introduction></app-introduction>
-</ng-template>
 
-<ng-template #elseBlock1>
   <nav class="navbar navbar-expand-sm navbar-dark bg-primary"align="center">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="mynavbar">
@@ -24,4 +9,7 @@
       </div>
     </div>
   </nav>
-</ng-template>
+
+
+
+  

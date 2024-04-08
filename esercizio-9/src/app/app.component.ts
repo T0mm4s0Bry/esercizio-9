@@ -14,6 +14,10 @@ import { ListComponent } from './list/list.component';
 })
 export class AppComponent {
   title = 'esercizio-9';
+  controllo: boolean = true
 
+arrivodati(value: any){
+  this.controllo = value
+}
 }
 

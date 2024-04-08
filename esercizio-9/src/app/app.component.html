@@ -1,4 +1,13 @@
-<app-navigation></app-navigation>
-<app-list></app-list>
-<app-introduction></app-introduction>
+<div *ngIf=  "controllo; then thenBlock1; else elseBlock1"></div>
+<ng-template #thenBlock1>
+    <app-navigation (mandaDatiEvento)="arrivodati($event)"></app-navigation>
+    <app-introduction></app-introduction>
+</ng-template>
+<ng-template #elseBlock1>
+    <app-navigation (mandaDatiEvento)="arrivodati($event)"></app-navigation>
+    <app-list></app-list>
+</ng-template>
+
+
+
 
