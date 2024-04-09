@@ -3,16 +3,16 @@
     <div class="card" *ngFor="let element of biglietti index as i">
       <div class="card-header">
         <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
-          <h4 class="card-title" align="center">{{element.nome}}</h4>
+          <h4 class="card-title" align="center"><strong>{{element.nome}}</strong></h4>
       </div>
           <div class="card-body">
-            <p class="card-text">{{element.sistemasolare}}</p>
-            <p class="card-text">{{element.durata}}</p>
-            <p class="card-text">{{element.postopartenza}}</p>
-            <p class="card-text">{{element.datapartenza}}</p>
-            <p class="card-text">{{element.dataarrivo}}</p>
-            <p class="card-text">{{element.costoeconomy}}</p>
-            <p class="card-text">{{element.costo}}</p>
+            <p class="card-text"><strong>SISTEMA SOLARE DI APPARTENENZA:</strong>{{element.sistemasolare}}</p>
+            <p class="card-text"><strong>DURATA DEL VIAGGIO IN ANNI LUCE:</strong>{{element.durata}}</p>
+            <p class="card-text"><strong>PIANETA DI PARTENZA :</strong>{{element.postopartenza}}</p>
+            <p class="card-text"><strong>DATA DELLA PARTENZA :</strong>{{element.datapartenza}}</p>
+            <p class="card-text"><strong>DATA DELL'ARRIVO :</strong>{{element.dataarrivo}}</p>
+            <p class="card-text"><strong>COSTO IN ECONOMY :</strong>{{element.costoeconomy|currency: 'EUR':'symbol'}}</p>
+            <p class="card-text"><strong>COSTO BUSINESS:</strong>{{element.costo|currency: 'EUR':'symbol'}}</p>
           </div>
     </div>
   </div>
