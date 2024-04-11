@@ -1,11 +1,11 @@
 <div class="container">
   <div class="card-container">
-    <div class="card" *ngFor="let element of biglietti index as i">
+    <div class="card" *ngFor="let element of biglietti index as i"[ngClass]="{'card-marte': biglietti.nome === 'marte', 'card-saturno': biglietti.nome === 'saturno'}">
       <div class="card-header">
         <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
           <h4 class="card-title" align="center"><strong>{{element.nome}}</strong></h4>
       </div>
-          <div class="card-body" [ngClass]="{'card': biglietti[0].nome=='marte'} ">
+          <div class="card-body" >
             <p class="card-text"><strong>SISTEMA SOLARE DI APPARTENENZA:</strong>{{element.sistemasolare}}</p>
             <p class="card-text"><strong>DURATA DEL VIAGGIO IN ANNI LUCE:</strong>{{element.durata}}</p>
             <p class="card-text"><strong>PIANETA DI PARTENZA :</strong>{{element.postopartenza}}</p>

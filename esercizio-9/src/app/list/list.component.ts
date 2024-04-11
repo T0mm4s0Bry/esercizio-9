@@ -19,5 +19,8 @@ export class ListComponent {
     {nome: 'ROXs 42 Rb',immagine:'https://exoplanets.nasa.gov/assets/content/planets/gasgiant.jpg',sistemasolare:'fascia di Kuiper',durata:'5,86',postopartenza:'plutone',datapartenza:'7 dicembre 3310 ',dataarrivo:'4 dicembre 3368',costoeconomy:'1132000000000000000 ',costo:'2300000000000000000'},
 
   ]
-}
+  
+    constructor() {}
+  }
+  
 
