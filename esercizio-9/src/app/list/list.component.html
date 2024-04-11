@@ -1,3 +1,5 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
 <div class="container">
   <div class="card-container">
     <div class="card" *ngFor="let element of biglietti index as i" [ngClass]="{'card-marte': element.nome === 'marte', 'card-saturno': element.nome === 'saturno','card-sole': element.nome === 'sole','card-urano': element.nome === 'urano','card-titano': element.nome === 'titano','card-plutone': element.nome === 'plutone','card-ROXs': element.nome === 'ROXs 42 Rb',}">
